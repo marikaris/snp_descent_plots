@@ -14,6 +14,12 @@ import 'font-awesome/css/font-awesome.min.css' // Font awesome import
 
 sync(store, router)
 
+if (window.__webpack_public_path__) {
+  /* eslint-disable no-undef, camelcase */
+  __webpack_public_path__ = window.__webpack_public_path__
+  /* eslint-enable */
+}
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
